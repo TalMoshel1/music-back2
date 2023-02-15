@@ -20,7 +20,7 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
     "@babel/preset-env": "^7.20.2",
     "nodemon": "^2.0.20",
-    "rimraf": "^4.1.1"
+    "rimraf": "^4.1.2"
   },
   "dependencies": {
     "@google-cloud/storage": "^6.9.2",
