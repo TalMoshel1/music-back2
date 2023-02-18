@@ -11,6 +11,8 @@ export async function createQuestion(req, res) {
     return res.send(createdQuestion)
 }
 
+console.log('')
+
 
 
 
