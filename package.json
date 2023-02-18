@@ -7,7 +7,7 @@
   "scripts": {
     "postinstall": "node postinstall.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm install && export PATH=./node_modules/.bin:$PATH && rimraf dist && babel src --out-dir dist  --copy-files",
+    "build": "rimraf dist && babel src --out-dir dist  --copy-files",
     "start": "node dist/app.js",
     "dev": "nodemon --exec babel-node src/app.js"
   },

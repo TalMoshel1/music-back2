@@ -1,4 +1,5 @@
-const { execSync } = require('child_process');
+// const { execSync } = require('child_process');
+import {execSync} from 'child_process'
 
 function runBuildScript() {
   console.log('Running build script...');
