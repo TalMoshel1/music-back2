@@ -1,4 +1,4 @@
-import { postScore, getBoard } from '../controllers/score-controller.js';
+import { postScore, getBoard } from '../controllers/score-controller.mjs';
 import express from 'express';
 
 const router = express.Router()

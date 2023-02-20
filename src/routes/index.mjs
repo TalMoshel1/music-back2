@@ -1,5 +1,5 @@
-import scoreRouter from './score.js'
-import questionsRouter from './question.js';
+import scoreRouter from './score.mjs'
+import questionsRouter from './question.mjs';
 
 import express from 'express'
 

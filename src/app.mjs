@@ -1,6 +1,6 @@
 import express from 'express';
-import router from './routes/index.js'
-import connectToDb from './db/connectToDb.js'
+import router from './routes/index.mjs'
+import connectToDb from './db/connectToDb.mjs'
 import cors from 'cors'
 
 const app = express();

@@ -1,4 +1,4 @@
-import { QuestionModel } from '../models/question.js';
+import { QuestionModel } from '../models/question.mjs';
 
 
 export async function serviceCreateQuestion(question){

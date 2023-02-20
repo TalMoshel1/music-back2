@@ -1,5 +1,5 @@
-import { serviceGetBoard, serviceCreateScore } from '../services/score-service.js'
-import { serviceGetUserQuestions } from '../services/question-service.js'
+import { serviceGetBoard, serviceCreateScore } from '../services/score-service.mjs'
+import { serviceGetUserQuestions } from '../services/question-service.mjs'
 import mongoose from 'mongoose'
 
 function calcScore(questionsDb, answersUser) {
