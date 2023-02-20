@@ -1,4 +1,4 @@
-import { serviceGetQuestions, serviceCreateQuestion } from '../services/question-service.mjs'
+import { serviceGetQuestions, serviceCreateQuestion } from '../services/question-service.js'
 // import {postAudio, getAudios} from '../store/cloudFunctions.js'
 export async function getQuestions(req, res) {
     const questions = await serviceGetQuestions()

@@ -1,4 +1,4 @@
-import { ScoreModel } from '../models/score.mjs';
+import { ScoreModel } from '../models/score.js';
 
 export async function serviceCreateScore(obj){
     try {

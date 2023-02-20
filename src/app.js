@@ -1,11 +1,10 @@
 import express from 'express';
-import router from './routes/index.mjs'
-import connectToDb from './db/connectToDb.mjs'
+import router from './routes/index.js'
+import connectToDb from './db/connectToDb.js'
 import cors from 'cors'
 
 const app = express();
 app.use(cors({ origin: process.env.FE_URL|| 'http://localhost:5173' , credentials: true }))
-
 
 app.use(express.json())
 app.use(router)
