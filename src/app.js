@@ -7,6 +7,7 @@ const FE_RENDER = 'https://music-trivia-frontend.onrender.com'
 const app = express();
 app.use(cors({ origin: process.env.FE_URL|| FE_RENDER , credentials: true }))
 
+
 app.use(express.json())
 app.use(router)
 
