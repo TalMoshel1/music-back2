@@ -3,7 +3,7 @@ import router from "./routes/index.js";
 import connectToDb from "./db/connectToDb.js";
 import cors from "cors";
 
-const FE_RENDER = "https://music-trivia-1.onrender.com//";
+const FE_RENDER = "https://music-trivia-1.onrender.com";
 const app = express();
 app.use(cors({ origin: process.env.FE_URL || FE_RENDER, credentials: true }));
 
