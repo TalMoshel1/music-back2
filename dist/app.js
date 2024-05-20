@@ -5,7 +5,7 @@ import cors from "cors";
 const app = express();
 app.use(
   cors({
-    origin: process.env.FE_URL || "https://music-trvia-front-end.onrender.com",
+    origin: process.env.FE_URL || "https://music-trivia-frontend.onrender.com",
     credentials: true,
   })
 );

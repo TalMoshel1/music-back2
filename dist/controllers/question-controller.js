@@ -23,4 +23,3 @@ function _createQuestion() {
   });
   return _createQuestion.apply(this, arguments);
 }
-console.log('');
