@@ -4,13 +4,13 @@ const MONGODB_PASSWORD='dUeQoobA3xzWyN62'
 
 async function connectToDb() {
     try {
-      mongoose.connect(`mongodb+srv://TalMoshel:${MONGODB_PASSWORD}@cluster0.oegjnmw.mongodb.net/?retryWrites=true&w=majority`)
+      await mongoose.connect(`mongodb+srv://TalMoshel:${MONGODB_PASSWORD}@cluster0.oegjnmw.mongodb.net/?retryWrites=true&w=majority`)
       .then((res)=>{
         console.log('connected to DB!')
         return res
       })
     } catch (error) {
-      return await Promise.reject(new Error(error))
+      return Promise.reject(new Error(error))
     }
   }
 
