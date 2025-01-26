@@ -10,7 +10,7 @@ async function connectToDb() {
         return res
       })
     } catch (error) {
-      return Promise.reject(new Error(error))
+      return await Promise.reject(new Error(error))
     }
   }
 
