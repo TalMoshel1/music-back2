@@ -18,7 +18,7 @@ async function connectToDb() {
     return connection; 
 
   } catch (error) {
-    console.error("Error connecting to database:", error); // Log the error for debugging
+    console.error("Error connecting to database:", error); 
     throw error; 
   }
 }
