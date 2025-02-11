@@ -1,18 +1,26 @@
-import mongoose from 'mongoose'
+import mongoose from 'mongoose';
+import dotenv from 'dotenv';
 
-const MONGODB_PASSWORD='dUeQoobA3xzWyN62'
-
+dotenv.config(); 
 async function connectToDb() {
-    try {
-      await mongoose.connect(`mongodb+srv://TalMoshel:${MONGODB_PASSWORD}@cluster0.oegjnmw.mongodb.net/?retryWrites=true&w=majority`)
-      .then((res)=>{
-        console.log('connected to DB!')
-        return res
-      })
-    } catch (error) {
-      return Promise.reject(new Error(error))
+  try {
+    const MONGODB_PASSWORD = process.env.MONGODB_PASSWORD; 
+
+    if (!MONGODB_PASSWORD) {
+      throw new Error("MONGODB_PASSWORD environment variable is not set.");
     }
+
+    const connection = await mongoose.connect(
+      `mongodb+srv://TalMoshel:${MONGODB_PASSWORD}@cluster0.oegjnmw.mongodb.net/?retryWrites=true&w=majority`
+    );
+
+    console.log('connected to DB!');
+    return connection; 
+
+  } catch (error) {
+    console.error("Error connecting to database:", error); // Log the error for debugging
+    throw error; 
   }
+}
 
-
-export default connectToDb
+export default connectToDb;
